@@ -1,0 +1,3 @@
+# Allow the desktop user to unload the VirtualBox modules without a password.
+# Replace "leandro" with your username. Validate with: sudo visudo -cf <file>
+leandro ALL=(root) NOPASSWD: /usr/local/sbin/vbox-unload.sh

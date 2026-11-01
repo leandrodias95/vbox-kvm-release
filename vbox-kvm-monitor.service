@@ -1,0 +1,12 @@
+[Unit]
+Description=Free KVM for Docker Desktop when a VirtualBox VM closes
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/vbox-kvm-monitor.sh
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

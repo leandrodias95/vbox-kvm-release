@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Docker Desktop
+Exec=systemctl --user start docker-desktop
+X-GNOME-Autostart-enabled=true
